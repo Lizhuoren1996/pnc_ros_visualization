@@ -1,0 +1,13 @@
+struct ViewPoint
+{
+    double   x;
+    double   y;
+    double  theta;
+}
+
+struct ViewLine
+{
+    ViewLinePoint p0;
+    ViewLinePoint p1;
+}
+

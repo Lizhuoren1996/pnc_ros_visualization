@@ -1,0 +1,21 @@
+struct ViewParkingPoint
+{
+    double   x;
+    double   y;
+    double  theta;
+}
+
+struct ViewParkinglot
+{
+    ViewParkingPoint p0;
+    ViewParkingPoint p1;
+    ViewParkingPoint p2;
+    ViewParkingPoint p3;
+}
+
+struct ViewParkinglotList
+{
+   int32_t num;
+   ViewParkinglot parking_lots[num];
+}
+

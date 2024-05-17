@@ -1,0 +1,28 @@
+struct MsgViewObstacleTrajectoryPoint
+{
+    double   x;
+    double   y;
+    double  theta;
+    double vel;
+    double acc;
+    double relative_time;
+}
+
+struct MsgViewObstacle
+{
+    double x;
+    double y;
+    double heading
+    double length;
+    double width;
+    double v;
+    int32_t num_poses;
+    MsgViewObstacleTrajectoryPoint poses[num_poses];
+}
+
+struct MsgViewObstacleList
+{
+    int32_t num;
+    MsgViewObstacle object[num];
+}
+

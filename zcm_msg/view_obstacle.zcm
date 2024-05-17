@@ -1,0 +1,28 @@
+struct ViewObstacleTrajectoryPoint
+{
+    double   x;
+    double   y;
+    double  theta;
+    double vel;
+    double acc;
+    double relative_time;
+}
+
+struct ViewObstacle
+{
+    double x;
+    double y;
+    double heading;
+    double length;
+    double width;
+    double v;
+    int32_t num_poses;
+    ViewObstacleTrajectoryPoint poses[num_poses];
+}
+
+struct ViewObstacleList
+{
+    int32_t num;
+    ViewObstacle objects[num];
+}
+

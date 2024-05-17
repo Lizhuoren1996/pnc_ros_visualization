@@ -1,0 +1,18 @@
+struct MsgViewPoint
+{
+    double   x;
+    double   y;
+    double  theta;
+}
+
+struct MsgViewRefline
+{
+    int32_t num_poses;
+    MsgViewPoint poses[num_poses];
+}
+
+struct MsgViewReflineList
+{
+    int32_t num;
+    MsgViewRefline reflines[num];
+}

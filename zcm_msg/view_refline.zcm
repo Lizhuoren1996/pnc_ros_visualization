@@ -1,0 +1,18 @@
+struct ViewPoint
+{
+    double   x;
+    double   y;
+    double  theta;
+}
+
+struct ViewRefline
+{
+    int32_t num_poses;
+    ViewPoint poses[num_poses];
+}
+
+struct ViewReflineList
+{
+    int32_t num;
+    ViewRefline reflines[num];
+}

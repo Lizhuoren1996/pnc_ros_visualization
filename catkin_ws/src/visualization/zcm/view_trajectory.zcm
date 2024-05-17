@@ -1,0 +1,16 @@
+struct ViewTrajectoryPoint
+{
+    double   x;
+    double   y;
+    double  theta;
+    double vel;
+    double acc;
+    double relative_time;
+}
+
+struct ViewTrajectory
+{
+    int32_t num_poses;
+    ViewTrajectoryPoint poses[num_poses]; // have num_poses points 
+}
+

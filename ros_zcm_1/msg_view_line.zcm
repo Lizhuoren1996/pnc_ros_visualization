@@ -1,0 +1,13 @@
+struct MsgViewLinePoint
+{
+    double   x;
+    double   y;
+    double  theta;
+}
+
+struct MsgViewLine
+{
+    MsgViewLinePoint p0;
+    MsgViewLinePoint p1;
+}
+

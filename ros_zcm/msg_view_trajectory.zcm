@@ -1,0 +1,16 @@
+struct MsgViewTrajectoryPoint
+{
+    double   x;
+    double   y;
+    double  theta;
+    double vel;
+    double acc;
+    double relative_time;
+}
+
+struct MsgViewTrajectory
+{
+    int32_t num_poses;
+    MsgViewTrajectoryPoint poses[num_poses];
+}
+
